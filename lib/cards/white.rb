@@ -119,7 +119,7 @@ class Cards
       "Beating your wives.",
       "Beefin' over turf.",
       "Bees?",
-      "Being a bust adult with many important things to do.",
+      "Being a busy adult with many important things to do.",
       "Being a dick to children.",
       "Being a dinosaur.",
       "Being a motherfucking sorcerer.",

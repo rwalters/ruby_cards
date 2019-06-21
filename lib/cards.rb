@@ -7,9 +7,20 @@ class Cards
   end
 
   def call
-    output = Cards::Black.random
-    output = output.sub(/_____/, "**#{Cards::White.random.chop}**")
+    if black =~ /_____/
+      black.sub(/_____/, "**#{white}**")
+    else
+      "#{black}\n  - #{white}"
+    end
+  end
 
-    output
+  private
+
+  def black
+    @black ||= Cards::Black.random
+  end
+
+  def white
+    @white ||= Cards::White.random.chop
   end
 end
