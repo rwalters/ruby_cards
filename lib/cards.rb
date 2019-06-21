@@ -8,7 +8,7 @@ class Cards
 
   def call
     output = Cards::Black.random
-    output = output.sub(/_____/, "**#{Cards::White.random}**")
+    output = output.sub(/_____/, "**#{Cards::White.random.chop}**")
 
     output
   end
